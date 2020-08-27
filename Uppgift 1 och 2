@@ -1,23 +1,59 @@
 <!DOCTYPE html> 
-
 <html lang="sv">
 	<head>
 		<meta charset="utf-8">
 		<title>Uppgift 1</title>
-		<link href="ye.CSS" rel="stylesheet">
+		<link href="style.CSS" rel="stylesheet">
 	</head>
-	<body>
-		<h1>David Nordin</hl>
-		<p> Jag är 17 år gammal och bor i Växjö. Jag går på Teknik-programmet på Teknikum.</p>
-		<p> Mina intressen är teknik, spel och träning.</p>
+	<body class=".bg.color">
+		<h1>David Nordin
+		</h1>
+		<p> Jag är 17 år gammal och bor i Växjö. Jag går på Teknik-programmet på Teknikum.
+		</p>
+		<p> Mina intressen är teknik, spel och träning.
+		</p>
+		<h2 class="teknik"> Teknik-programmet
+		</h2>
+		<p class="teknik2"> Jag valde att gå på Teknik-programmet eftersom jag har ett intresse av teknik och datorer.
+		</p>
+		<a href="https://Google.com"> Google <a/>
+		<a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"> 
+		<img src="https://www.svtstatic.se/image/wide/650/24754742/1576083057?format=auto&quality=70" alt="Teknikum">
+		<a/>
 		
-		<hl> Teknik-programmet </hl>
-		<p> Jag valde att gå på Teknik-programmet eftersom jag har ett intresse av teknik och datorer.</p>
-		<a hrf="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"> <img src="https://www.svtstatic.se/image/wide/650/24754742/1576083057?format=auto&quality=70" alt="Teknikum">
 	</body>
 </html>
 
-
-p{
+h1,h2{
 		color: red;
-		background-color : green;
+		font-family: arial;
+		font-size: 22px;
+}
+
+p {
+	font-size: 150%;
+	color:blue;
+}
+
+.bg.color{ 
+Background-color: gray;
+
+}
+
+p.teknik{
+color:green;
+Background-color: blue;
+	text-align: Center;
+}
+
+p.teknik2{
+	text-align: right;
+	
+}
+a {
+	text-decoration: none;
+}
+
+p.border{
+	border:8px solid black;
+}
