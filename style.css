@@ -1,35 +1,36 @@
-h1,h2{
-p{	
-		color: red;
-		font-family: arial;
-		font-size: 22px;
-}
-
+h1,h2{}
+	
 p {
+	color: red;
+	font-family: arial;
+	font-size: 22px;
+}
+
+p{
+	color: black;
 	font-size: 150%;
-	color: blue;
+} 
+
+
+.bgcolor{ 
+	Background-color: gray;
 }
 
-.bg.color{ 
-Background-color: gray;
-
-}
-
-p.teknik{
-color: green;
-Background-color: blue;
+.teknik{
+	color: green;
+	Background-color: blue;
 	text-align: Center;
 }
 
-p.teknik2{
+.teknik2{
 	text-align: right;
 }
 
-a {
+a{
 	text-decoration: none;
 }
 
-p.border{
+.border{
 	border:8px solid black;
 }
 
@@ -38,6 +39,7 @@ p.border{
 	grid-template-columns: 100px 100px;
 	grid-template-rows: auto;
 	grid-template-areas: "header header"
-						  "main sidebar"
+						  "sidebar main"
 						  "footer footer";
+
 }
