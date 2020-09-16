@@ -1,16 +1,13 @@
-h1,h2{}
+h1,h2{
+	color: gray;
+	text-align: center;
+}
 	
-p {
-	color: red;
+p{
+	color: black;
 	font-family: arial;
 	font-size: 22px;
 }
-
-p{
-	color: black;
-	font-size: 150%;
-} 
-
 
 .bgcolor{ 
 	Background-color: gray;
@@ -19,7 +16,7 @@ p{
 .teknik{
 	color: green;
 	Background-color: blue;
-	text-align: Center;
+	text-align: center;
 }
 
 .teknik2{
@@ -34,12 +31,53 @@ a{
 	border:8px solid black;
 }
 
-.container {
+.container{
 	display: grid;
-	grid-template-columns: 100px 100px;
-	grid-template-rows: auto;
-	grid-template-areas: "header header"
-						  "sidebar main"
-						  "footer footer";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: "header header header"
+						  "sidebar main main"
+						  "footer footer footer";
 
+}
+
+table, tr, th, td{
+	border: 1px solid black;
+	border-collapse:collapse;
+	width: 200px;
+	height: 20px;
+}
+
+tr:nth-child(even){
+	background-color:lightgray;
+}
+
+thead{
+	font-size: 150%;
+}
+tr:nth-child(odd){
+	background-color: Red;
+}
+
+tr:nth-child(1){
+background-color: lightgreen;
+}
+tr.David1:nth-child(1){
+	background-color:blue;
+}
+
+th.David2{
+	background-color: red;
+}
+
+th.David3{
+		background-color: yellow;
+}
+
+th.David4{
+		background-color:black;
+}
+
+th.David5{
+	background-color: green;
 }
