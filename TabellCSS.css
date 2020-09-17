@@ -1,0 +1,40 @@
+table, tr, th, td{
+	border: 1px solid black;
+	border-collapse:collapse;
+	width: 200px;
+	height: 20px;
+}
+
+tr:nth-child(even){
+	background-color:lightgray;
+}
+
+thead{
+	font-size: 150%;
+}
+tr:nth-child(odd){
+	background-color: lightblue;
+}
+
+tr:nth-child(1){
+background-color: lightgreen;
+}
+tr.Namn1:nth-child(1){
+	background-color:blue;
+}
+
+th.Namn2{
+	background-color: red;
+}
+
+th.Namn3{
+		background-color: yellow;
+}
+
+th.Namn4{
+		background-color:black;
+}
+
+th.Namn5{
+	background-color: green;
+}
