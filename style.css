@@ -9,24 +9,30 @@ p{
 	font-size: 22px;
 }
 
-.bgcolor{ 
+.bg-color{ 
 	Background-color: gray;
 }
 
-.teknik{
+p.teknik{
 	color: green;
 	Background-color: blue;
 	text-align: center;
 }
 
-.teknik2{
+p.teknik2{
 	text-align: right;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-.border{
+p.Border{
 	border:8px solid black;
+}
+
+.container{
+	display: grid;
+	grid-template-columns; 750px 750px;
+	grid-template-rows: auto;
 }
