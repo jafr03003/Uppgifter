@@ -1,0 +1,23 @@
+h1{
+		font-family: Trebuchet MS;
+		font-size: 50px;
+}
+
+body{
+	background-color: lightgrey;
+}
+
+a{
+	text-decoration: none;
+	color: floralwhite;
+}
+a:hover{
+	background-color: CadetBlue;
+	color: darkgrey;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 400px 400px;
+	grid-template-rows: auto;
+}
