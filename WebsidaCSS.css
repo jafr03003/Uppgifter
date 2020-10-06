@@ -1,6 +1,25 @@
-h1{
+.container{ 	
+	display: grid;
+	grid-template-columns: 500px 500px 500px 500px;
+	grid-template-rows: 100px 55px 200px 1fr;
+	grid-template-areas:
+	"header header header header"
+	"nav nav nav nav"
+	"main main main main"
+	"footer footer footer footer";
+}
+
+header{
+		grid-area: header;
 		font-family: Trebuchet MS;
-		font-size: 50px;
+		font-size: 15px;
+		border: 2px solid white;
+		text-align: center;
+}
+
+footer{
+	grid-area: footer;
+	font-family: Trebuchet MS;
 }
 
 body{
@@ -9,15 +28,31 @@ body{
 
 a{
 	text-decoration: none;
-	color: floralwhite;
+	color: deepskyblue;
 }
 a:hover{
 	background-color: CadetBlue;
 	color: darkgrey;
 }
 
-.container{
-	display: grid;
-	grid-template-columns: 400px 400px;
-	grid-template-rows: auto;
+nav{
+	grid-area: nav;
+	text-align: center;
+	background-color: DarkCyan;
+	border: 4px white;
+
 }
+ul{
+	list-style-type: none;
+	padding: 0;
+	border: 1px white;
+
+}
+
+nav ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: chocolate;
+	border: 2px solid slategrey;
+}
+
