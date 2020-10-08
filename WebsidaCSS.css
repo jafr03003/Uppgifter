@@ -1,12 +1,12 @@
 .container{ 	
 	display: grid;
-	grid-template-columns: 500px 500px 500px 500px;
-	grid-template-rows: 100px 55px 200px 1fr;
+	grid-template-columns: 5hv 1fr 1fr 1fr 1fr 5hv;
+	grid-template-rows: 100px 55px 200px 400px;
 	grid-template-areas:
-	"header header header header"
-	"nav nav nav nav"
-	"main main main main"
-	"footer footer footer footer";
+	". header header header header ."
+	". nav nav nav nav ."
+	". main main main main ."
+	". footer footer footer footer .";
 }
 
 header{
@@ -15,24 +15,37 @@ header{
 		font-size: 15px;
 		border: 2px solid white;
 		text-align: center;
+		background-color: lightcyan;
+}
+
+main{
+	grid-area: main;
+	background-color: azure;
+}
+
+p.main{
+	color: darkslategrey;
+	font-family: tahoma;
+
 }
 
 footer{
 	grid-area: footer;
 	font-family: Trebuchet MS;
+	background-color: darkorange;
 }
 
 body{
-	background-color: lightgrey;
+	background-color: thistle;
 }
 
 a{
 	text-decoration: none;
-	color: deepskyblue;
+	color: silver;
+	
 }
 a:hover{
-	background-color: CadetBlue;
-	color: darkgrey;
+	color: gold;
 }
 
 nav{
@@ -55,4 +68,3 @@ nav ul{
 	background-color: chocolate;
 	border: 2px solid slategrey;
 }
-
